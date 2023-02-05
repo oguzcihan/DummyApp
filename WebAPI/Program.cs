@@ -4,7 +4,6 @@ using DataAccess.Abstracts;
 using DataAccess.Concretes;
 using DataAccess.Context;
 using Microsoft.EntityFrameworkCore;
-using WebAPI.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
