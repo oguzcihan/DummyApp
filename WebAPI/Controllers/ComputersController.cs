@@ -2,9 +2,11 @@
 using Entities.Concretes;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using WebAPI.Middlewares;
 
 namespace WebAPI.Controllers
 {
+    [LogFilter]
     [Route("[controller]")]
     [ApiController]
     public class ComputersController : ControllerBase

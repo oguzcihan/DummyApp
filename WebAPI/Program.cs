@@ -4,6 +4,7 @@ using DataAccess.Abstracts;
 using DataAccess.Concretes;
 using DataAccess.Context;
 using Microsoft.EntityFrameworkCore;
+using WebAPI.Filters;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,7 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Her request ile instance oluþur.
+//Her request ile instance oluï¿½ur.
 builder.Services.AddScoped<IComputerService,ComputerManager>();
 builder.Services.AddScoped<IComputerRepository,ComputerRepository>();
 
